@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @baby.name %>
+</p>
+
+<!--
+<ul>
+<% @baby.breast_feedings.each do | bf|%>
+  <li><span>Cantidad: <%= bf.quantity %>, Duración: <%= bf.duration %>, Fecha: <%= bf.created_at %></span></li>
+
+<%end%>
+</ul>
+-->
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Veces que ha tomado hoy</th>
+      <th>Fecha de la última vez que tomó leche</th>
+      <th>Cuánto tiempo ha tomado hoy</th>
+      <th>Cuánto ha tomado hoy</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @baby.breast_feeding_times_today %></td>
+        <td><%= @baby.last_time_drinking  %></td>
+        <td><%= @baby.breast_feeding_duration_today  %></td>
+        <td><%= @baby.breast_feeding_quantity_today  %></td>
+      </tr>
+  </tbody>
+</table>
+
+
+<%= link_to 'Editar', edit_baby_path(@baby) %> |
+<%= link_to 'Volver', babies_path %>

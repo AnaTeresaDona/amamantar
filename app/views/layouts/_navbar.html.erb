@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: 	#C5B358;">
+     <%= link_to 'Bebés', babies_path %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-link">
+        <%= link_to 'Amamantamiento', breast_feedings_path %>
+      </li>
+      <li class="nav-link">
+        <%= link_to 'Agregar Amantamiento', new_breast_feeding_path %>
+      </li>
+      <li class="nav-link">
+        <%= link_to 'Agregar Bebé', new_baby_path %>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bebés
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://localhost:3000/babies/1">Anastasia</a>
+          <a class="dropdown-item" href="http://localhost:3000/babies/2">Ben</a>
+          <a class="dropdown-item" href="http://localhost:3000/babies/3">Carlos</a>
+          <a class="dropdown-item" href="http://localhost:3000/babies/4">Daniela</a>
+          <a class="dropdown-item" href="http://localhost:3000/babies/5"> Esteban</a>
+          <a class="dropdown-item" href="http://localhost:3000/babies/6"> Fresia</a>
+          <a class="dropdown-item" href="http://localhost:3000/babies/7"> Gastón</a>
+          <a class="dropdown-item" href="http://localhost:3000/babies/8">Hefestos</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
